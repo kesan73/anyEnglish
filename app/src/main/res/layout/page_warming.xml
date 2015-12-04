@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/exampleLayout"
+            android:layout_gravity="center"
+            android:background="#ffd127"
+            android:layout_weight="0.55"
+            android:layout_margin="10dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/patternKeyTranslate"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffffff"
+                    android:gravity="bottom|center_horizontal"
+                    android:layout_weight="0.35"/>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/page"
+                    android:id="@+id/pageImage"
+                    android:layout_gravity="center"
+                    android:visibility="visible">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/keyPatternText_EN"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff00"
+                    android:layout_weight="0.35"
+                    android:gravity="center"
+                    android:visibility="invisible"/>
+
+            </FrameLayout>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/loudspeaker_speaker_up"
+                android:id="@+id/audioIcon"
+                android:layout_weight="0.35"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="8dp"
+                android:background="@android:color/transparent"
+                android:onClick="onAudioButtonClicked"
+                android:visibility="invisible"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            android:id="@+id/descLayout"
+            android:background="#3dae23"
+            android:layout_margin="10dp"
+            android:layout_weight="0.45">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/scrollView"
+                    android:fillViewport="true"
+                    android:layout_gravity="start|end|fill">
+
+                    <TextView
+                        android:id="@+id/descText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:textColor="#ff0000ff"
+                        android:visibility="invisible"/>
+
+                </ScrollView>
+
+                <ImageView
+                    android:id="@+id/myanimation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@anim/anim_android"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

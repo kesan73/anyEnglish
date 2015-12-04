@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/warmingBtn"
+        android:text="Warming"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onWarmingClicked"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listeningBtn"
+        android:text="Listening"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onListeningClicked"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reviewingBtn"
+        android:text="Reviewing"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onReviewingClicked"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/answeringBtn"
+        android:text="Answering"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onAnsweringClicked" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectingBtn"
+        android:text="Selecting"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onSelectingClicked" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/playingBtn"
+        android:text="Playing"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onPlayingClicked" />
+
+
+</LinearLayout>

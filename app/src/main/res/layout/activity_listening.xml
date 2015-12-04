@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+<!--    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffffff"
+        />-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#6cffec2b"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/patternLayout"
+            android:background="#ffd127"
+            android:layout_weight="0.33"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/patternText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#ff0000ff"/>
+
+            <TextView
+                android:id="@+id/patternText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#ff0000ff"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/sentence1Layout"
+            android:layout_gravity="center"
+            android:background="#3dae23"
+            android:layout_weight="0.33"
+            android:layout_margin="10dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/sentenceText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#ff0000ff"
+                android:layout_weight="0.75"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:src="@drawable/loudspeaker_speaker_up"
+                android:id="@+id/audioIcon"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="8dp"
+                android:background="@android:color/transparent"
+                android:onClick="onAudioButtonClicked"
+                android:layout_weight="0.2"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/sentence2Layout"
+            android:background="#3dae23"
+            android:layout_weight="0.33"
+            android:layout_margin="10dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/sentenceText2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#ff0000ff"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonLayout"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:visibility="invisible">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/showDescBtn"
+                android:text="설 명"
+                android:onClick="onShowDescClicked"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/autoPlayBtn"
+                android:text="진 행"
+                android:onClick="onCloseClicked"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bookMarkingBtn"
+                android:text="북마크"
+                android:onClick="onBookMarkingClicked"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/reloadBtn"
+                android:text="재시작"
+                android:onClick="onReloadClicked"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

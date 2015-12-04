@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plist version="1.0">
+<array>
+	<dict>
+		<key>VOICE_FILE_PREFIX</key>
+		<string>001-0</string>
+		<key>PATTERN_EN</key>
+		<string>I am just about to</string>
+		<key>PATTERN_KR</key>
+		<string>지금 막 ~하려던 참이다.</string>
+		<key>PATTERN_JP</key>
+		<string>ちょうど~しようとしているところです</string>
+		<key>PATTERN_KEY_TRANSLATE</key>
+		<array>
+			<string>지금 막 ~하려던 참이다.</string>
+			<string>ちょうど~しようとしているところです。</string>
+		</array>
+		<key>PATTERN_DESCRIPTION</key>
+		<dict>
+			<key>KR_DESCRIPTION</key>
+			<string>「I am just about to + verb infinitive」 is an expression that can be used 「when planning to do something in the very near future」. For example, if a friend calls to ask, “What are you doing now?”, and you were planning to eat lunch just then, you can say, 「I am just about to have lunch.」. Another example is, 「I'm just about to write a note on Facebook.」, which can be used when 「지금 막 페이스북에 글을 쓸려고 했어요.」
+
+「I am just about to + 동사원형…」형태로 「아주 가까운 미래에 어떤 일을 하려고 할 때」 쓸 수 있는 표현입니다. 예를 들어 친구에게 전화가 와서 &apos;지금 뭐해?&apos; 라고 묻는다면, 마침 점심을 먹으려고 했을 때에는「I am just about to have lunch.」라고 표현합니다. 다른 예문으로는 「I&apos;m just about to write a note on Facebook.」「지금 막 페이스북에 글을 쓸려고 했어요.」라고 표현할 수도 있습니다.</string>
+
+			<key>JP_DESCRIPTION</key>
+			<string>「I am just about to + verb infinitive」 is an expression that can be used 「when planning to do something in the very near future」. For example, if a friend calls to ask, “What are you doing now?”, and you were planning to eat lunch just then, you can say, 「I am just about to have lunch.」. Another example is, 「I'm just about to write a note on Facebook.」, which can be used when 「今、ちょうどフェイスブックに書き込みしようとしていたところだよ。」
+
+「I am just about to + 動詞の原型…」の形で、「とても近い未来に、あることをしようとする時」に使う表現です。例えば友達から電話がかかってきて、「今何しているの？」と聞かれ、ちょうど昼食をとろうとしているなら、「I am just about to have lunch.」「ちょうど昼食をとろうとしていたところです。」と表現します。他の例文では、「I&apos;m just about to write a note on Facebook.」「今、ちょうどフェイスブックに書き込みしようとしていたところだよ。」などと表現することもできます。</string>
+			<key>KR_HIGHLIGHT</key>
+			<array>
+				<string>I am just about to + 동사원형…</string>
+				<string>I am just about to + verb infinitive</string>
+				<string>아주 가까운 미래에 어떤 일을 하려고 할 때</string>
+				<string>when planning to do something in the very near future</string>
+				<string>I am just about to have lunch.</string>
+				<string>I&apos;m just about to write a note on Facebook.</string>
+			</array>
+			<key>JP_HIGHLIGHT</key>
+			<array>
+				<string>I am just about to + 動詞の原型…</string>
+				<string>I am just about to + verb infinitive</string>
+				<string>とても近い未来に、あることをしようとする時</string>
+				<string>when planning to do something in the very near future</string>
+				<string>I am just about to have lunch.</string>
+				<string>I&apos;m just about to write a note on Facebook.</string>
+			</array>
+			<key>KR_SUMARY</key>
+			<array>
+				<string>I am just about to + 동사원형…</string>
+				<string> </string>
+				<string>(1) I am just about to have lunch.</string>
+				<string>    「지금 막 점심을 먹으려던 참이야.」</string>
+				<string>(2) I&apos;m just about to write a note on Facebook.</string>
+				<string>    「지금 막 페이스북에 글을 쓸려고 했어요.」</string>
+			</array>
+			<key>JP_SUMARY</key>
+			<array>
+				<string>I am just about to + 動詞の原型…</string>
+				<string> </string>
+				<string>(1) I am just about to have lunch.</string>
+				<string>    「ちょうど昼食をとろうとしていたところです。」</string>
+				<string>(2) I&apos;m just about to write a note on Facebook.</string>
+				<string>    「今、ちょうどフェイスブックに書き込みしようとしていたところだよ。」</string>
+			</array>
+		</dict>
+		<key>NOTIFICATION_WARMING</key>
+		<array>
+			<string>「I am just about to + 동사원형…」</string>
+			<string>「지금 막 ~하려던 참이다.」</string>
+			<string>「I am just about to + 動詞の原型…」</string>
+			<string>「ちょうど~しようとしているところです。」</string>
+		</array>
+		<key>SubSentence1</key>
+		<dict>
+			<key>VOICE_FILE_PREFIX</key>
+			<string>001-1</string>
+			<key>QUESTION_EN</key>
+			<string>It’s almost lunch time and I’m starving to death. Have you eaten something?</string>
+			<key>SENTENCE_EN</key>
+			<string>I am just about to eat my brunch.</string>
+			<key>QUESTION_JP</key>
+			<string>もうすぐお昼休憩だし、お腹ぺこぺこ。何か食べた？</string>
+			<key>SENTENCE_JP</key>
+			<string>ちょうどブランチをしようとしているところです。</string>
+			<key>QUESTION_KR</key>
+			<string>점심 시간이 거의 다돼서 배고파 죽을 지경이야. 넌 식사했니?</string>
+			<key>SENTENCE_KR</key>
+			<string>막 아침 겸 점심 먹으려던 참이었어.</string>
+			<key>SENTENCE_ENGLISH_COLORED</key>
+			<string>I am just about to</string>
+			<key>EXCEPTED_ANSWER_FOR_GAME</key>
+			<string>my brunch.</string>
+			<key>SENTENCE_FOR_ONLY_QA</key>
+			<array>
+				<string>No,</string>
+				<string>いいえ、</string>
+				<string>아니,</string>
+				<string>NO_ENG</string>
+			</array>
+			<key>QUESTION_ANSWER</key>
+			<array>
+				<string>my brunch</string>
+				<string>I am</string>
+				<string>to eat</string>
+				<string>I am just about to</string>
+			</array>
+			<key>AVAILABLE_GAME_TYPE</key>
+			<array>
+				<true/>
+				<true/>
+				<true/>
+				<true/>
+				<true/>
+				<true/>
+			</array>
+			<key>NOTIFICATION_SUB</key>
+			<dict>
+				<key>LISTENING_Q1</key>
+				<string>「I am just about to eat my brunch.」</string>
+				<key>LISTENING_Q2</key>
+				<string>「I a_ j___ a____ t_ eat my brunch.」</string>
+				<key>OPENING_Q1_KR</key>
+				<string>「막 아침 겸 점심 먹으려던 참이었어.(eat my brunch)」</string>
+				<key>OPENING_Q1_JP</key>
+				<string>「ちょうどブランチをしようとしているところです。(eat my brunch)」 </string>
+				<key>QA_Q1</key>
+				<string>A:「Have you eaten something?」  B:「I a_ j___ a____ t_ eat my brunch.」</string>
+			</dict>
+		</dict>
+		<key>SubSentence2</key>
+		<dict>
+			<key>VOICE_FILE_PREFIX</key>
+			<string>001-2</string>
+			<key>QUESTION_EN</key>
+			<string>Do we have a meeting with the clients on Friday?</string>
+			<key>SENTENCE_EN</key>
+			<string>I am just about to inform you regarding our meeting.</string>
+			<key>QUESTION_JP</key>
+			<string>金曜日にクライアントとミーティングがあるの？</string>
+			<key>SENTENCE_JP</key>
+			<string>ちょうどミーティングについて知らせようとしていたところ。</string>
+			<key>QUESTION_KR</key>
+			<string>금요일에 고객과 미팅이 있나요?</string>
+			<key>SENTENCE_KR</key>
+			<string>지금 막 미팅에 관련해서 알리려던 참이었어요.</string>
+			<key>SENTENCE_ENGLISH_COLORED</key>
+			<string>I am just about to</string>
+			<key>EXCEPTED_ANSWER_FOR_GAME</key>
+			<string>regarding our meeting.</string>
+			<key>QUESTION_ANSWER</key>
+			<array>
+				<string>I am</string>
+				<string>inform you</string>
+				<string>regarding our meeting</string>
+				<string>I am just about to</string>
+			</array>
+			<key>AVAILABLE_GAME_TYPE</key>
+			<array>
+				<true/>
+				<true/>
+				<true/>
+				<true/>
+				<true/>
+				<true/>
+			</array>
+			<key>NOTIFICATION_SUB</key>
+			<dict>
+				<key>LISTENING_Q1</key>
+				<string>「I am just about to inform you regarding our meeting.」</string>
+				<key>LISTENING_Q2</key>
+				<string>「I a_ j___ a____ t_ inform you regarding our meeting.」</string>
+				<key>OPENING_Q1_KR</key>
+				<string>「지금 막 미팅에 관련해서 알리려던 참이었어요.(regarding our meeting)」</string>
+				<key>OPENING_Q1_JP</key>
+				<string>「ちょうどミーティングについて知らせようとしていたところ。(regarding our meeting)」</string>
+				<key>QA_Q1</key>
+				<string>A:「Do we have a meeting with the clients on Friday?」  B:「I a_ j___ a____ t_ inform you regarding our meeting.」</string>
+			</dict>
+		</dict>
+		<key>SubSentence3</key>
+		<dict>
+			<key>VOICE_FILE_PREFIX</key>
+			<string>001-3</string>
+			<key>QUESTION_EN</key>
+			<string>Can I drop by your place right now?</string>
+			<key>SENTENCE_EN</key>
+			<string>I am just about to leave for work.</string>
+			<key>QUESTION_JP</key>
+			<string>今、あなたの家によってもいい？</string>
+			<key>SENTENCE_JP</key>
+			<string>ちょうど仕事に出かけるところなのだけど。</string>
+			<key>QUESTION_KR</key>
+			<string>지금 너한테 잠깐 들러도 될까?</string>
+			<key>SENTENCE_KR</key>
+			<string>나 지금 막 일하러 나가려던 참이야.</string>
+			<key>SENTENCE_ENGLISH_COLORED</key>
+			<string>I am just about to</string>
+			<key>EXCEPTED_ANSWER_FOR_GAME</key>
+			<string>work.</string>
+			<key>QUESTION_ANSWER</key>
+			<array>
+				<string>for work</string>
+				<string>to leave</string>
+				<string>just about</string>
+				<string>I am just about to</string>
+			</array>
+			<key>AVAILABLE_GAME_TYPE</key>
+			<array>
+				<true/>
+				<true/>
+				<true/>
+				<true/>
+				<false/>
+				<true/>
+			</array>
+			<key>NOTIFICATION_SUB</key>
+			<dict>
+				<key>LISTENING_Q1</key>
+				<string>「I am just about to leave for work.」</string>
+				<key>LISTENING_Q2</key>
+				<string>「I a_ j___ a____ t_ leave for work.」</string>
+				<key>OPENING_Q1_KR</key>
+				<string>「나 지금 막 일하러 나가려던 참이야.」</string>
+				<key>OPENING_Q1_JP</key>
+				<string>「ちょうど仕事に出かけるところなのだけど。」</string>
+				<key>QA_Q1</key>
+				<string>A:「Can I drop by your place right now?」  B:「I a_ j___ a____ t_ leave for work.」</string>
+			</dict>
+		</dict>
+	</dict>
+	<dict>
+		<key>VOICE_FILE_PREFIX</key>
+		<string>002-0</string>
+		<key>PATTERN_EN</key>
+		<string>I&apos;m afraid</string>
+		<key>PATTERN_KR</key>
+		<string>유감이지만 ~라고 생각한다.</string>
+		<key>PATTERN_JP</key>
+		<string>すいませんが~、恐れ入りますが~、残念ながら~</string>
+		<key>PATTERN_KEY_TRANSLATE</key>
+		<array>
+			<string>미안하지만 ~이다.</string>
+			<string>すいませんが~</string>
+		</array>
+		<key>PATTERN_DESCRIPTION</key>
+		<dict>
+			<key>KR_DESCRIPTION</key>
+			<string>The expression 「I'm afraid」 is used when 「giving unpleasant information」to someone. It is a polite expression that shows you feel sorry about the situation. For example, 「I'm afraid I can't do that.」「I’m very sorry, but I cannot do that.」 Like that sentence, it is often used in the form 「I'm afraid I can't + verb」.
+
+「I&apos;m afraid」표현은 상대방에게 뭔가 「반갑지 않은 소식이나 정보를 전달」할 때, 앞에 붙여 상대방에게 안타까운 마음을 전달하는 공손한 표현입니다. 예컨대 「I&apos;m afraid I can&apos;t do that.」「미안하지만 저는 그것을 할 수 없습니다.」 와 같이 「I&apos;m afraid I can&apos;t + 동사」형태로 많이 사용합니다.</string>
+			
+			<key>JP_DESCRIPTION</key>
+			<string>The expression 「I'm afraid」 is used when 「giving unpleasant information」to someone. It is a polite expression that shows you feel sorry about the situation. For example, 「I'm afraid I can't do that.」「I’m very sorry, but I cannot do that.」 Like that sentence, it is often used in the form 「I'm afraid I can't + verb」.
+
+「I&apos;m afraid」という表現は、相手に何か「嬉しくない知らせや情報を伝達」する時、その前置きとして相手に残念な気持ちを伝える丁寧な表現です。例えば 「I&apos;m afraid I can&apos;t do that.」「すいませんが、私はそれをすることができません。」 といったように「I&apos;m afraid I can&apos;t + 動詞」の形で多く使われます。</string>
+			<key>KR_HIGHLIGHT</key>
+			<array>
+				<string>I&apos;m afraid</string>
+				<string>I'm afraid I can't + verb</string>
+				<string>giving unpleasant information</string>
+				<string>반갑지 않은 소식이나 정보를 전달</string>
+				<string>I&apos;m afraid I can&apos;t + 동사</string>
+				<string>I&apos;m afraid I can&apos;t do that.</string>
+			</array>
+			<key>JP_HIGHLIGHT</key>
+			<array>
+				<string>I&apos;m afraid</string>
+				<string>I'm afraid I can't + verb</string>
+				<string>giving unpleasant information</string>
+				<string>嬉しくない知らせや情報を伝達</string>
+				<string>I&apos;m afraid I can&apos;t + 動詞</string>
+				<string>I&apos;m afraid I can&apos;t do that.</string>
+			</array>
+
+			<key>KR_SUMARY</key>
+			<array>
+				<string>I&apos;m afraid I can&apos;t + 동사</string>
+				<string> </string>
+				<string>(1) I&apos;m afraid I can&apos;t do that.</string>
+				<string>    「미안하지만 저는 그것을 할 수 없습니다.」</string>
+			</array>
+			<key>JP_SUMARY</key>
+			<array>
+				<string>I&apos;m afraid I can&apos;t + 動詞</string>
+				<string> </string>
+				<string>(1) I&apos;m afraid I can&apos;t do that.</string>
+				<string>    「すいませんが、私はそれをすることができません。」</string>
+			</array>
+		</dict>
+		<key>NOTIFICATION_WARMING</key>
+		<array>
+			<string>「I&apos;m afraid + 주어 + 동사…」</string>
+			<string>「미안하지만 ~이다.」</string>
+			<string>「I&apos;m afraid + 主語 + 動詞…」</string>
+			<string>「すいませんが~」</string>
+		</array>
+		<key>SubSentence1</key>
+		<dict>
+			<key>VOICE_FILE_PREFIX</key>
+			<string>002-1</string>
+			<key>QUESTION_EN</key>
+			<string>I’m so excited that we’re going to travel to Thailand this coming holiday season.</string>
+			<key>SENTENCE_EN</key>
+			<string>I’m afraid that I can’t join you.</string>
+			<key>QUESTION_JP</key>
+			<string>今度の休みにタイに旅行行くのが本当に楽しみ。</string>
+			<key>SENTENCE_JP</key>
+			<string>残念ながら、私は参加できないよ。</string>
+			<key>QUESTION_KR</key>
+			<string>다가오는 휴가 시즌에 우리가 태국 여행을 간다는 게 정말 신나!</string>
+			<key>SENTENCE_KR</key>
+			<string>미안한데 난 너와 함께 할 수 없을 것 같아.</string>
+			<key>SENTENCE_ENGLISH_COLORED</key>
+			<string>I’m afraid</string>
+			<key>EXCEPTED_ANSWER_FOR_GAME</key>
+			<string>in you.</string>
+			<key>QUESTION_ANSWER</key>
+			<array>
+				<string>I can’t</string>
+				<string>join you</string>
+				<string>aid that</string>
+				<string>I’m afraid</string>
+			</array>
+			<key>AVAILABLE_GAME_TYPE</key>
+			<array>
+				<true/>
+				<true/>
+				<true/>
+				<true/>
+				<false/>
+				<true/>
+			</array>
+			<key>NOTIFICATION_SUB</key>
+			<dict>
+				<key>LISTENING_Q1</key>
+				<string>「I’m afraid that I can’t join you.」</string>
+				<key>LISTENING_Q2</key>
+				<string>「I’m a_____ that I can’t join you.」</string>
+				<key>OPENING_Q1_KR</key>
+				<string>「미안한데 난 너와 함께 할 수 없을 것 같아.」</string>
+				<key>OPENING_Q1_JP</key>
+				<string>「残念ながら、私は参加できないよ。」</string>
+				<key>QA_Q1</key>
+				<string>A:「I’m so excited that we’re going to travel to Thailand this coming holiday season.」  B:「I’m a_____ that I can’t join you.」</string>
+			</dict>
+		</dict>
+		<key>SubSentence2</key>
+		<dict>
+			<key>VOICE_FILE_PREFIX</key>
+			<string>002-2</string>
+			<key>QUESTION_EN</key>
+			<string>May I talk to Miranda, please?</string>
+			<key>SENTENCE_EN</key>
+			<string>I’m afraid she’s not here.</string>
+			<key>QUESTION_JP</key>
+			<string>ミランダと話せますか？</string>
+			<key>SENTENCE_JP</key>
+			<string>申し訳ありませんが、彼女はここにいません。</string>
+			<key>QUESTION_KR</key>
+			<string>미란다와 통화할 수 있을까요?</string>
+			<key>SENTENCE_KR</key>
+			<string>미안하지만 그녀는 여기에 없습니다.</string>
+			<key>SENTENCE_ENGLISH_COLORED</key>
+			<string>I’m afraid</string>
+			<key>EXCEPTED_ANSWER_FOR_GAME</key>
+			<string>here.</string>
+			<key>QUESTION_ANSWER</key>
+			<array>
+				<string>here</string>
+				<string>she’s not</string>
+				<string>afraid</string>
+				<string>I’m afraid</string>
+			</array>
+			<key>AVAILABLE_GAME_TYPE</key>
+			<array>
+				<true/>
+				<true/>
+				<true/>
+				<true/>
+				<true/>
+				<true/>
+			</array>
+			<key>NOTIFICATION_SUB</key>
+			<dict>
+				<key>LISTENING_Q1</key>
+				<string>「I’m afraid she’s not here.」</string>
+				<key>LISTENING_Q2</key>
+				<string>「I’m a_____ she’s not here.」</string>
+				<key>OPENING_Q1_KR</key>
+				<string>「미안하지만 그녀는 여기에 없습니다.」</string>
+				<key>OPENING_Q1_JP</key>
+				<string>「申し訳ありませんが、彼女はここにいません。」</string>
+				<key>QA_Q1</key>
+				<string>A:「May I talk to Miranda, please?」  B:「I’m a_____ she’s not here.」</string>
+			</dict>
+		</dict>
+		<key>SubSentence3</key>
+		<dict>
+			<key>VOICE_FILE_PREFIX</key>
+			<string>002-3</string>
+			<key>QUESTION_EN</key>
+			<string>It’s great to see you Steve! How about grabbing a lunch? It’s my treat!</string>
+			<key>SENTENCE_EN</key>
+			<string>I’m afraid I have to go.</string>
+			<key>QUESTION_JP</key>
+			<string>スティーブ、会えてうれしいよ！ランチでもどう？おごるよ！</string>
+			<key>SENTENCE_JP</key>
+			<string>悪いけど、私、行かなきゃ</string>
+			<key>QUESTION_KR</key>
+			<string>만나서 정말 반갑다 스티브! 점심 같이 할래? 내가 쏠께!</string>
+			<key>SENTENCE_KR</key>
+			<string>미안한데 나 가봐야 해.</string>
+			<key>SENTENCE_ENGLISH_COLORED</key>
+			<string>I’m afraid</string>
+			<key>EXCEPTED_ANSWER_FOR_GAME</key>
+			<string>go.</string>
+			<key>QUESTION_ANSWER</key>
+			<array>
+				<string>go</string>
+				<string>have to</string>
+				<string>I’m</string>
+				<string>I’m afraid</string>
+			</array>
+			<key>AVAILABLE_GAME_TYPE</key>
+			<array>
+				<true/>
+				<true/>
+				<true/>
+				<true/>
+				<true/>
+				<true/>
+			</array>
+			<key>NOTIFICATION_SUB</key>
+			<dict>
+				<key>LISTENING_Q1</key>
+				<string>「I’m afraid I have to go.」</string>
+				<key>LISTENING_Q2</key>
+				<string>「I’m a_____ I have to go.」</string>
+				<key>OPENING_Q1_KR</key>
+				<string>「미안한데 나 가봐야 해.」</string>
+				<key>OPENING_Q1_JP</key>
+				<string>「悪いけど、私、行かなきゃ。」</string>
+				<key>QA_Q1</key>
+				<string>A:「It’s great to see you Steve! How about grabbing a lunch?」  B:「I’m a_____ I have to go.」</string>
+			</dict>
+		</dict>
+	</dict>
+	<dict>
+		<key>VOICE_FILE_PREFIX</key>
+		<string>021-0</string>
+		<key>PATTERN_EN</key>
+		<string>It depends on</string>
+		<key>PATTERN_KR</key>
+		<string>~에 달려있다. ~따라 다르다.</string>
+		<key>PATTERN_JP</key>
+		<string>～にかかっている。～次第だ。</string>
+		<key>PATTERN_KEY_TRANSLATE</key>
+		<array>
+			<string>~에 달려있다.</string>
+			<string>～にかかっている。～次第だ。</string>
+		</array>
+		<key>PATTERN_DESCRIPTION</key>
+		<dict>
+			<key>KR_DESCRIPTION</key>
+			<string>This expression is used when 「a situation changes because of a certain condition」. For example,if the weather is nice and you’re thinking about going for a walk,you can say, 「It depends on the weather.」「날씨에 따라 달라요」. This expression can be used in the forms「It depends on + noun」 and 「It depends on + subject + verb…」. It’s a very useful expression, so please remember it.
+
+이 표현은 어떠한 사항이 「특정 조건에 따라 달라지는 경우」 사용할 수 있습니다. 예를 들어 날씨가 좋다면 산책을 갈 생각이라면, 「It depends on the weather.」「날씨에 따라 달라요.」라고 할 수 있습니다. 이 표현은 「It depends on + 명사」 또는 「It depends on + 주어 + 동사…」형태로 사용할 수 있습니다. 유용한 표현이니 잘 기억하세요. </string>
+
+			<key>JP_DESCRIPTION</key>
+			<string>This expression is used when 「a situation changes because of a certain condition」. For example,if the weather is nice and you’re thinking about going for a walk,you can say, 「It depends on the weather.」「天気次第です。」. This expression can be used in the forms「It depends on + noun」 and 「It depends on + subject + verb…」. It’s a very useful expression, so please remember it.
+
+この表現は、ある事柄が「一定条件によって変更される場合」に使用することができます。例えば、天気が良ければ散歩しようと思っているなら、「It depends on the weather.」「天気次第です。」と言うことができます。この表現は 「It depends on + 名詞」、または「It depends on + 主語 + 動詞…」の形で使用することができます。役に立つ表現なのでしっかりと覚えてください。</string>
+			<key>KR_HIGHLIGHT</key>
+			<array>
+				<string>It depends on + 주어 + 동사</string>
+				<string>It depends on + subject + verb</string>	
+				<string>a situation changes because of a certain condition</string>	
+				<string>특정 조건에 따라 달라지는 경우</string>	
+				<string>It depends on + 명사</string>
+				<string>It depends on + noun</string>
+				<string>It depends on the weather.</string>
+			</array>
+
+			<key>JP_HIGHLIGHT</key>
+			<array>
+				<string>It depends on + 主語 + 動詞</string>
+				<string>It depends on + subject + verb</string>	
+				<string>a situation changes because of a certain condition</string>	
+				<string>一定条件によって変更される場合</string>	
+				<string>It depends on + 名詞</string>
+				<string>It depends on + noun</string>
+				<string>It depends on the weather.</string>
+			</array>
+			<key>KR_SUMARY</key>
+			<array>
+				<string>「It depends on + 주어 + 동사…」 / 「It depends on + 명사」</string>
+				<string> </string>
+				<string>(1) It depends on the weather.</string>
+				<string>    「날씨에 따라 달라요.」</string>
+			</array>
+			<key>JP_SUMARY</key>
+			<array>
+				<string>「It depends on + 主語 + 動詞…」 / 「It depends on + 名詞」</string>
+				<string> </string>
+				<string>(1) It depends on the weather.</string>
+				<string>    「天気次第です。」</string>
+			</array>
+		</dict>
+		<key>NOTIFICATION_WARMING</key>
+		<array>
+			<string>「It depends on + 주어 + 동사…」</string>
+			<string>「~에 달려있다. ~에 의존하다.」</string>
+			<string>「It depends on + 主語 + 動詞…」</string>
+			<string>「～にかかっている。～次第だ。」</string>
+		</array>
+		<key>SubSentence1</key>
+		<dict>
+			<key>VOICE_FILE_PREFIX</key>
+			<string>021-1</string>
+			<key>QUESTION_EN</key>
+			<string>Which one do you think is better?</string>
+			<key>SENTENCE_EN</key>
+			<string>It depends on what you choose.</string>
+			<key>QUESTION_JP</key>
+			<string>どちらがいいと思いますか？</string>
+			<key>SENTENCE_JP</key>
+			<string>それはあなたが何を選ぶかにかかっています。</string>
+			<key>QUESTION_KR</key>
+			<string>어떤 것이 더 난 것 같아요?</string>
+			<key>SENTENCE_KR</key>
+			<string>당신이 무엇을 고르는지에 달려있죠.</string>
+			<key>SENTENCE_ENGLISH_COLORED</key>
+			<string>It depends on</string>
+			<key>EXCEPTED_ANSWER_FOR_GAME</key>
+			<string>choose.</string>
+			<key>QUESTION_ANSWER</key>
+			<array>
+				<string>what you</string>
+				<string>choose</string>
+				<string>on</string>
+				<string>It depends on</string>
+			</array>
+			<key>AVAILABLE_GAME_TYPE</key>
+			<array>
+				<true/>
+				<true/>
+				<true/>
+				<true/>
+				<false/>
+				<true/>
+			</array>
+			<key>NOTIFICATION_SUB</key>
+			<dict>
+				<key>LISTENING_Q1</key>
+				<string>「It depends on what you choose.」</string>
+				<key>LISTENING_Q2</key>
+				<string>「It d______ o_ what you choose.」</string>
+				<key>OPENING_Q1_KR</key>
+				<string>「당신이 무엇을 고르는지에 달려있죠.(what you choose.)」</string>
+				<key>OPENING_Q1_JP</key>
+				<string>「それはあなたが何を選ぶかにかかっています。(what you choose.)」</string>
+				<key>QA_Q1</key>
+				<string>A:「Which one do you think is better?」  B:「It d______ o_ what you choose.」</string>
+			</dict>
+		</dict>
+		<key>SubSentence2</key>
+		<dict>
+			<key>VOICE_FILE_PREFIX</key>
+			<string>021-2</string>
+			<key>QUESTION_EN</key>
+			<string>What if I take his advice instead of hers?</string>
+			<key>SENTENCE_EN</key>
+			<string>It depends on how you deal with the situation.</string>
+			<key>QUESTION_JP</key>
+			<string>私が、彼女のアドバイスの代わりに彼のアドバイスを聞いたらどうなりますか？</string>
+			<key>SENTENCE_JP</key>
+			<string>この状況をどう扱うかにかかっていますね。</string>
+			<key>QUESTION_KR</key>
+			<string>그녀의 조언 대신 그 남자의 조언을 받아드리면 어떨까?</string>
+			<key>SENTENCE_KR</key>
+			<string>그 상황을 어떻게 처리하느냐에 따라 다르지.</string>
+			<key>SENTENCE_ENGLISH_COLORED</key>
+			<string>It depends on</string>
+			<key>EXCEPTED_ANSWER_FOR_GAME</key>
+			<string>deal with the situation.</string>
+			<key>QUESTION_ANSWER</key>
+			<array>
+				<string>how you</string>
+				<string>deal with</string>
+				<string>the situation</string>
+				<string>It depends on</string>
+			</array>
+			<key>AVAILABLE_GAME_TYPE</key>
+			<array>
+				<true/>
+				<true/>
+				<true/>
+				<true/>
+				<true/>
+				<true/>
+			</array>
+			<key>NOTIFICATION_SUB</key>
+			<dict>
+				<key>LISTENING_Q1</key>
+				<string>「It depends on how you deal with the situation.」</string>
+				<key>LISTENING_Q2</key>
+				<string>「It d_____ o_ how you deal with the situation.」</string>
+				<key>OPENING_Q1_KR</key>
+				<string>「그 상황을 어떻게 처리하느냐에 따라 다르지.(deal with the situation)」</string>
+				<key>OPENING_Q1_JP</key>
+				<string>「この状況をどう扱うかにかかっていますね。(deal with the situation)」</string>
+				<key>QA_Q1</key>
+				<string>A:「What if I take his advice instead of hers?」  B:「It d_____ o_ how you deal with the situation.」</string>
+			</dict>
+		</dict>
+		<key>SubSentence3</key>
+		<dict>
+			<key>VOICE_FILE_PREFIX</key>
+			<string>021-3</string>
+			<key>QUESTION_EN</key>
+			<string>Do you think he’s going to like it though?</string>
+			<key>SENTENCE_EN</key>
+			<string>It depends on his personality.</string>
+			<key>QUESTION_JP</key>
+			<string>ですが、彼がそれを喜ぶと思いますか？</string>
+			<key>SENTENCE_JP</key>
+			<string>それは彼の性格にかかっています。</string>
+			<key>QUESTION_KR</key>
+			<string>어쨋거나 그가 그걸 좋아할 것 같니?</string>
+			<key>SENTENCE_KR</key>
+			<string>그의 성격에 따라 다르지.</string>
+			<key>SENTENCE_ENGLISH_COLORED</key>
+			<string>It depends on</string>
+			<key>EXCEPTED_ANSWER_FOR_GAME</key>
+			<string>ality.</string>
+			<key>QUESTION_ANSWER</key>
+			<array>
+				<string>his personality</string>
+				<string>on</string>
+				<string>It</string>
+				<string>It depends on</string>
+			</array>
+			<key>AVAILABLE_GAME_TYPE</key>
+			<array>
+				<true/>
+				<true/>
+				<true/>
+				<true/>
+				<false/>
+				<true/>
+			</array>
+			<key>NOTIFICATION_SUB</key>
+			<dict>
+				<key>LISTENING_Q1</key>
+				<string>「It depends on his personality.」</string>
+				<key>LISTENING_Q2</key>
+				<string>「It d______ o_ his personality.」</string>
+				<key>OPENING_Q1_KR</key>
+				<string>「그의 성격에 따라 다르지.(his personality)」</string>
+				<key>OPENING_Q1_JP</key>
+				<string>「それは彼の性格にかかっています。(his personality)」</string>
+				<key>QA_Q1</key>
+				<string>A:「Do you think he’s going to like it though?」  B:「It d______ o_ his personality.」</string>
+			</dict>
+		</dict>
+	</dict>
+</array>
+</plist>
