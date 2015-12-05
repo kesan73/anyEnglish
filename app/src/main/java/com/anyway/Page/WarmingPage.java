@@ -6,14 +6,12 @@ import android.graphics.drawable.AnimationDrawable;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.anyway.AnywayEnglishApp;
 import com.anyway.Event.AnimationDrawableEvent;
 import com.anyway.R;
 
@@ -22,20 +20,10 @@ import com.anyway.R;
  */
 public class WarmingPage extends LinearLayout {
 
-    int mPageIndex, mCurIndex;
-    private AnywayEnglishApp anywayEnglishApp;
-    //HashMap<String, ArrayList<String>> mMapBook;
-
-    int viewId; // 001-0, 002-0, 003-0
-    //static final String AUDIO_URL = "001-0E.m4a";
-    String mAudioFile;
-
-    public ImageView mPageImage, mDrawableImage, mAnimation;
+    public ImageView mPageImage, mAnimation;
+    TextView mPatternKeyTranslate, mDescText, mPatternKeyEng;
     ImageButton mAudioIconButton;
     AnimationDrawableEvent frameAnimation;
-
-    public TextView mPatternKeyTranslate, mDescText, mPatternKeyEng;
-    Button callButton;
 
     Context mContext;
 
@@ -60,8 +48,7 @@ public class WarmingPage extends LinearLayout {
         inflater.inflate(R.layout.page_warming, this, true);
 
         mPatternKeyTranslate = (TextView) findViewById(R.id.patternKeyTranslate);
-        mDescText = (TextView)findViewById(R.id.descText);
-        mAnimation = (ImageView) findViewById(R.id.myanimation);
+        mPatternKeyEng = (TextView)findViewById(R.id.keyPatternText_EN);
 
         AnimationDrawable animDrawable = (AnimationDrawable) mContext.getResources().getDrawable(R.drawable.anim_android);
 
@@ -69,24 +56,23 @@ public class WarmingPage extends LinearLayout {
             frameAnimation = new AnimationDrawableEvent(animDrawable);
         }
 
+        mAnimation = (ImageView) findViewById(R.id.myanimation);
         mAnimation.setImageDrawable(frameAnimation);
-        mAnimation.setVisibility(View.INVISIBLE);
+
+        mDescText = (TextView)findViewById(R.id.descText);
 
         mPageImage = (ImageView)findViewById(R.id.pageImage);
-
-        mPatternKeyEng = (TextView)findViewById(R.id.keyPatternText_EN);
-        mPatternKeyEng.setVisibility(View.INVISIBLE);
-
         mAudioIconButton = (ImageButton) findViewById(R.id.audioIcon);
     }
 
+/*
     public void setCallNumber(String number) {
         callButton.setTag(number);
     }
 
     public String getNameText() {
         return mPatternKeyTranslate.getText().toString();
-    }
+    }*/
 
     public void setPatternTranslateText(String textPattern) {
         mPatternKeyTranslate.setText(textPattern);
@@ -96,28 +82,8 @@ public class WarmingPage extends LinearLayout {
         mPatternKeyEng.setText(textPatternEng);
     }
 
-    public ImageButton setAudioImageButton() {
-        return mAudioIconButton;
-    }
-
-/*    public void setVisiblePatternEngText(int Visible) {
-        mPatternKeyEng.setVisibility(Visible);
-    }
-
-    public void setVisiblePageImage(int Visible) {
-        mPageImage.setVisibility(Visible);
-    }*/
-
-    public void setDescText(String descText) {
-        mDescText.setText(descText);
-    }
-
-    public TextView getDescText() {
-        return mDescText;
-    }
-
-    public void setAudioFile(String audioFile) {
-        mAudioFile = audioFile;
+    public TextView getPatternEngText() {
+        return mPatternKeyEng;
     }
 
     public AnimationDrawableEvent getFrameAnimation() {
@@ -126,6 +92,18 @@ public class WarmingPage extends LinearLayout {
 
     public ImageView getAnimationImage() {
         return mAnimation;
+    }
+
+    public ImageButton setAudioImageButton() {
+        return mAudioIconButton;
+    }
+
+    public TextView getDescText() {
+        return mDescText;
+    }
+
+    public void onAudioButtonClicked(View view) {
+        Toast.makeText(mContext, "Audio Button Clicked", Toast.LENGTH_LONG).show();
     }
 
 /*
@@ -196,18 +174,4 @@ public class WarmingPage extends LinearLayout {
         return view;
     }
 */
-
-
-
-    public void onAudioButtonClicked(View view) {
-        Toast.makeText(mContext, "Audio Button Clicked", Toast.LENGTH_LONG).show();
-    }
-
-/*    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-
-        audioPlayEvent.killMediaPlayer();
-        audioPlayEvent = null;
-    }*/
 }

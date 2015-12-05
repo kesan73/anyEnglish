@@ -10,14 +10,7 @@ import android.widget.ImageView;
 public class AnimationEvent {
 
     Activity mActivity;
-    View mView;
-
-    //int mResId;
     int mObjId;
-
-    //AnimationDrawable animDrawable = null;
-    //public AnimationDrawableEvent frameAnimation = null;
-    //ImageView mAnimation;
 
     AnimationEventEndListener endListener = null;
 
@@ -83,21 +76,21 @@ public class AnimationEvent {
         return true;
     }
 
-    public void start(AnimationDrawableEvent frameAnimation, final ImageView mAnimation) {
+    public void start(final ImageView imageView, AnimationDrawableEvent frameAnimation) {
 
         frameAnimation.setOnAnimationStateListener(new AnimationDrawableEvent.OnAnimationStateListener() {
             @Override
             public void onAnimationEnd() {
                 //Toast.makeText(mActivity.getApplicationContext(), "Animation Stopped", Toast.LENGTH_SHORT).show();
-                mAnimation.setVisibility(View.INVISIBLE);
+                imageView.setVisibility(View.INVISIBLE);
                 endListener.onAnimationEventTermination(mObjId);
             }
         });
 
         // Aninmation Show & Start
         //mAnimation.setVisibility(View.VISIBLE);
+        imageView.setVisibility(View.VISIBLE);
         frameAnimation.setVisible(true, false);
         frameAnimation.start();
     }
-
 }

@@ -67,18 +67,12 @@ public class AnimTextFadeEvent {
 
     public void start(TextView textView, String strText) {
 
-        //TextView textView = null;
-
         if (mAnimTypeId == EventInfo.FADE_IN) {
-
-            // Resource ID ???
-            //textView = (TextView) mActivity.findViewById(mResId);
             textView.setText(strText);
             textView.setVisibility(View.VISIBLE);
             textView.startAnimation(mFadeIn);
 
         } else if (mAnimTypeId == EventInfo.FADE_OUT) {
-            //textView = (TextView) mActivity.findViewById(mResId);
             textView.setText(strText);
             textView.startAnimation(mFadeOut);
         } else if (mAnimTypeId == EventInfo.FADE_INOUT) {

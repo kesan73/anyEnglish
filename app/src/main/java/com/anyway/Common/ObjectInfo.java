@@ -14,9 +14,10 @@ public class ObjectInfo {
     public static final int WARMING_DESC_TEXT = 1003;
 
     public static final int WARMING_PATTERN_TEXT = 1004;
+    public static final int WARMING_PATTERN_ENG_TEXT = 1005;
 
-    public static final int WARMING_AUDIO_ICON = 1005;
-    public static final int WARMING_NEXT = 1006;
+    public static final int WARMING_AUDIO_ICON = 1006;
+    public static final int WARMING_NEXT = 1007;
 
     // LISTENING STEP
     public static final int LISTENING_START = 2000;

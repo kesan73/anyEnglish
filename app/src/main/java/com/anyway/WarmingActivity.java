@@ -48,9 +48,8 @@ public class WarmingActivity extends AppCompatActivity implements AnimTranslateE
     AnimImageNotifyEvent animImageNotifyEvent, animNextNotifyEvent;
     AnimTranslateEvent animTranslateEvent;
     AnimationEvent animationEvent;
-    AnimTextFadeEvent animTextFadeEvent;
+    AnimTextFadeEvent animPatternEvent, animPatternEngEvent;
     AudioPlayEvent audioPlayEvent;
-
     ImageShowEvent audioImage;
 
     int mPageIndex = 0;
@@ -93,13 +92,14 @@ public class WarmingActivity extends AppCompatActivity implements AnimTranslateE
         animTranslateEvent = new AnimTranslateEvent(this, EventInfo.TRANSLATE_UP, ObjectInfo.WARMING_BUTTON_LAYOUT, layout);
 
         // Create Waiting Animation Event Object
-        //ImageView drawableImage = (ImageView)mAnyPager.getfindViewById(R.id.myanimation);
         animationEvent = new AnimationEvent(this, ObjectInfo.WARMING_DESC_ANIM);
 
-        audioImage = new ImageShowEvent(this, EventInfo.FADE_IN, ObjectInfo.WARMING_AUDIO_ICON);
-
         // Create Fade Animation Text Event Object
-        animTextFadeEvent = new AnimTextFadeEvent(this, EventInfo.FADE_IN, R.id.descText, ObjectInfo.WARMING_DESC_TEXT);
+        animPatternEvent = new AnimTextFadeEvent(this, EventInfo.FADE_IN, R.id.descText, ObjectInfo.WARMING_DESC_TEXT);
+        animPatternEngEvent = new AnimTextFadeEvent(this, EventInfo.FADE_IN, R.id.keyPatternText_EN, ObjectInfo.WARMING_PATTERN_ENG_TEXT);
+
+        // Create ImageShowEvent Object
+        audioImage = new ImageShowEvent(this, EventInfo.FADE_IN, ObjectInfo.WARMING_AUDIO_ICON);
 
         try {
             audioPlayEvent = new AudioPlayEvent(this);
@@ -121,10 +121,6 @@ public class WarmingActivity extends AppCompatActivity implements AnimTranslateE
                 //Toast.makeText(getApplicationContext(), "addOnPageChangeListener::onPageSelected : " + position, Toast.LENGTH_SHORT).show();
 
                 mPageIndex = position;
-                //WarmingPage warmingPage = (WarmingPage)mAnyPager.getChildAt(mAnyPager.getCurrentItem());
-                //WarmingPage warmingPage = (WarmingPage)mAdapter.getViewAtPosition(position);
-                //animationEvent.setAnimationImage(warmingPage.getAnimationImage(animationEvent.frameAnimation));
-                //warmingPage.setAnimationVisible();
 
                 if (animTranslateEvent != null) {
                     animTranslateEvent.start();
@@ -143,11 +139,11 @@ public class WarmingActivity extends AppCompatActivity implements AnimTranslateE
     public class ViewPagerAdapter extends PagerAdapter {
 
         private Context mContext;
-        private SparseArray instantiatedViewsArray;
+        private SparseArray PageArray;
 
         public ViewPagerAdapter( Context context ) {
             mContext = context;
-            this.instantiatedViewsArray = new SparseArray();
+            this.PageArray = new SparseArray();
         }
 
         public int getCount() {
@@ -161,9 +157,8 @@ public class WarmingActivity extends AppCompatActivity implements AnimTranslateE
 
             // Key Pattern Translate String
             warmingPage.setPatternTranslateText(mMapBook.get("PATTERN_KEY_TRANSLATE").get(position * 2));
-            //warmingPage.setDescText(mMapBook.get("KR_DESCRIPTION").get(position));
-            //warmingPage.setAudioFile(mMapBook.get("VOICE_FILE_PREFIX").get(position) + "E" + CommInfo.EXT);
-            warmingPage.setPatternEngText(mMapBook.get("PATTERN_EN").get(position));
+            // Key Pattern English String
+            //warmingPage.setPatternEngText(mMapBook.get("PATTERN_EN").get(position));
 
             //warmingPage.mAnimation.setVisibility(View.VISIBLE);
             //animationEvent.frameAnimation.setVisible(true, false);
@@ -180,8 +175,8 @@ public class WarmingActivity extends AppCompatActivity implements AnimTranslateE
             // 컨테이너에 추가
             container.addView(warmingPage, position);
 
-            warmingPage = (WarmingPage)mAnyPager.getChildAt(position);
-            instantiatedViewsArray.put(position, warmingPage);
+            warmingPage = (WarmingPage) mAnyPager.getChildAt(position);
+            PageArray.put(position, warmingPage);
 
             int curPosition = mAnyPager.getCurrentItem();
 
@@ -197,7 +192,7 @@ public class WarmingActivity extends AppCompatActivity implements AnimTranslateE
 
         public void destroyItem(ViewGroup container, int position, Object view) {
             container.removeView((View)view);
-            instantiatedViewsArray.remove(position);
+            PageArray.remove(position);
         }
 
         public boolean isViewFromObject(View view, Object object) {
@@ -205,7 +200,7 @@ public class WarmingActivity extends AppCompatActivity implements AnimTranslateE
         }
 
         public View getViewAtPosition(int position) {
-            return (View)instantiatedViewsArray.get(position);
+            return (View)PageArray.get(position);
         }
 
         @Override
@@ -240,17 +235,14 @@ public class WarmingActivity extends AppCompatActivity implements AnimTranslateE
 
         // Play Animation
         WarmingPage warmingPage = (WarmingPage)mAdapter.getViewAtPosition(mPageIndex);
-        warmingPage.getAnimationImage().setVisibility(View.VISIBLE);
-
-        animationEvent.start(warmingPage.getFrameAnimation(), warmingPage.getAnimationImage());
+        animationEvent.start(warmingPage.getAnimationImage(), warmingPage.getFrameAnimation());
     }
 
     @Override
     public void onAnimTextFadeEventTermination(int index) {
         //Toast.makeText(getApplicationContext(), "onAnimTextFadeEventTermination " + index , Toast.LENGTH_LONG).show();
 
-        // Play Audio
-        //001-0E.m4a
+        // Play Audio - 001-0E.m4a
         audioPlayEvent.start(mMapBook.get("VOICE_FILE_PREFIX").get(mPageIndex) + "E" + CommInfo.EXT, ObjectInfo.WARMING_PATTERN_TEXT);
     }
 
@@ -269,8 +261,12 @@ public class WarmingActivity extends AppCompatActivity implements AnimTranslateE
 
         // Show Text
         WarmingPage warmingPage = (WarmingPage)mAdapter.getViewAtPosition(mPageIndex);
-        animTextFadeEvent.start(warmingPage.getDescText(), mMapBook.get("KR_DESCRIPTION").get(mPageIndex));
-        warmingPage.mPatternKeyEng.setVisibility(View.VISIBLE);
+
+        // 첫번째 변수는 리소스 아이디로 화면에 보여지는 현재의 개별 page에서 구한 다음,
+        // 두번째 변수는 App class에 저장된 리소스 정보를 해당 리소스 아이디를 animation 처리해 준다.
+        animPatternEvent.start(warmingPage.getDescText(), mMapBook.get("KR_DESCRIPTION").get(mPageIndex));
+        //warmingPage.mPatternKeyEng.setVisibility(View.VISIBLE);
+        animPatternEngEvent.start(warmingPage.getPatternEngText(), mMapBook.get("PATTERN_EN").get(mPageIndex));
         warmingPage.mPageImage.setVisibility(View.INVISIBLE);
     }
 
